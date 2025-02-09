@@ -50,7 +50,7 @@ public class RestApiController {
 
             JsonNode results = root.get("results");
             for (JsonNode rt : results) {
-                //Extract relevant info from the response and use it for what you want, in this case build a Brewery object
+                
                 String name = rt.get("name").asText();
 
                 Pokemon pokemon = new Pokemon(name);
